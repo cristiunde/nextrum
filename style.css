@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -93,6 +95,7 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 width: 90%;
+padding: 50px;
   }
 
   .team{
@@ -109,6 +112,7 @@ width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .fondatori{
@@ -120,17 +124,112 @@ padding: 50px;
   .quote{
 background: grey;
 width: auto;
-display: flex;
-justify-content: center;
 padding: 30px;
-align-items:baseline;
+padding-right: 200px;
 margin-top: 50px;
-gap: 30px;
   }
 
- ok {
-background-color: aquamarine;
-font-size: 150%;
+
+  .wisewords{
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .autor
+    {
+ 
+      font: normal 100 20px/20px 'Montserrat', sans-serif;
+      letter-spacing: 0.07em;
+      text-align: right;
+      &:before {
+        content: " - ";
+      }
   }
 
  
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
+
+.contactus{
+  display: flex;
+  padding: 50px;
+  font-size: 50%;
+  gap: 30px;
+ 
+  align-items: center;
+}
+
+
+.cinde {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.cinde:focus {
+  color: #171e29;
+}
+
+.cinde:hover {
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  fill: rgb(255, 0, 0);
+}
+
+.cinde:active {
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  fill: rgb(255, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .cinde {
+    min-width: 170px;
+  }
+}
+
+.footercopy{
+  font-size:100%;
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+
+
+
