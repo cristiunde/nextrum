@@ -1,0 +1,136 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(119, 119, 119);
+}
+
+
+
+.header{
+background-color: grey;
+width: auto;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+padding-bottom: 10px;
+align-items: baseline;
+}
+
+.center{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.links, a{
+font-weight: 300;
+font-size: 20px;
+text-decoration: none;
+color: white;
+list-style: none;
+}
+
+.logo{
+cursor: pointer;
+}
+
+.altepagini, li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.altepagini {
+    transition: all 1s ease 0s;
+}
+ 
+.altepagini:hover{
+    color: rgb(202, 2, 2)(204, 5, 5);
+    
+  }
+
+  p {
+    font-size: 300%; 
+ }
+
+  .firstsection{
+display: flex;
+justify-content: space-evenly;
+padding-top: 50px;
+align-items:center;
+gap: 169px;
+padding-bottom: 100px;
+  }
+
+  .textapare{
+    border-right: 3px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+         typing 2s steps(18),
+         cursor .4s step-end infinite alternate;
+  }
+
+  @keyframes cursor{
+    50% { border-color: transparent }
+  }
+
+  @keyframes typing{
+    from { width: 0 }
+  }
+
+  .aboutus{
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+width: 90%;
+  }
+
+  .team{
+    color: rgb(255, 0, 0);
+    font-size: x-large;
+  }
+
+  .imagien{
+    clip-path: circle();
+  
+  }
+
+  .textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fondatori{
+padding: 50px;
+    display: flex;
+    gap: 100px
+  }
+
+  .quote{
+background: grey;
+width: auto;
+display: flex;
+justify-content: center;
+padding: 30px;
+align-items:baseline;
+margin-top: 50px;
+gap: 30px;
+  }
+
+ ok {
+background-color: aquamarine;
+font-size: 150%;
+  }
+
+ 
