@@ -1,235 +1,209 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
 }
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(119, 119, 119);
+ body {
+     font-family: 'Montserrat', sans-serif;
+     background-color: rgb(119, 119, 119);
 }
-
-
-
-.header{
-background-color: grey;
-width: auto;
-display: flex;
-justify-content: space-between;
-padding: 10px;
-padding-bottom: 10px;
-align-items: baseline;
+ .header{
+     background-color: grey;
+     width: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     padding-bottom: 10px;
+     align-items: baseline;
 }
-
-.center{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+ .center{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
 }
-
-.links, a{
-font-weight: 300;
-font-size: 20px;
-text-decoration: none;
-color: white;
-list-style: none;
+ .links, a{
+     font-weight: 300;
+     font-size: 20px;
+     text-decoration: none;
+     color: white;
+     list-style: none;
 }
-
-.logo{
-cursor: pointer;
+ .logo{
+     cursor: pointer;
 }
-
-.altepagini, li{
-  display: inline-block;
-  padding: 0px 20px;
+ .altepagini, li{
+     display: inline-block;
+     padding: 0px 20px;
 }
-
-.altepagini {
-    transition: all 1s ease 0s;
+ a {
+     transition: all 0.7s ease 0s;
+}
+ .links :hover{
+     font-size: 50px;
+     color: red;
+}
+ p {
+     font-size: 300%;
+}
+ .firstsection{
+     display: flex;
+     justify-content: space-evenly;
+     padding-top: 50px;
+     align-items:center;
+     gap: 169px;
+     padding-bottom: 100px;
+}
+ .textapare{
+     border-right: 3px solid;
+     width: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     font-size: 100%;
+     padding-right: 3px;
+     animation: typing 2s steps(18), cursor .4s step-end infinite alternate;
+}
+ @keyframes cursor{
+     50% {
+         border-color: transparent 
+    }
+}
+ @keyframes typing{
+     from {
+         width: 0 
+    }
+}
+ .aboutus{
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     align-items:center;
+     justify-content:center;
+     flex-direction:column;
+     width: 90%;
+     padding: 50px;
+}
+ .wrapper {
+     height: 220px;
+     border-radius: 50%;
+     overflow: hidden;
+     border: 6px solid #fff;
+}
+ .wrapper img {
+     height: 100%;
+     width: 100%;
+     border-radius: 50%;
+     filter: grayscale(100%);
+     transition: 0.5s ease;
+     cursor: pointer;
+}
+ .wrapper img:hover {
+     transform: scale(1.3);
+     filter: grayscale(0%);
+}
+ .team{
+     color: rgb(255, 0, 0);
+     font-size: x-large;
+}
+ .imagien{
+     clip-path: circle();
+}
+ .textbox{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+ .fondatori{
+     padding: 50px;
+     display: flex;
+     gap: 100px 
+}
+ .quote{
+     background: grey;
+     width: auto;
+     padding: 30px;
+     padding-right: 200px;
+     margin-top: 50px;
+}
+ .wisewords{
+     font-size: 200%;
+     text-align: center;
+}
+ .autor {
+     font: normal 100 20px/20px 'Montserrat', sans-serif;
+     letter-spacing: 0.07em;
+     text-align: right;
+     &:before {
+         content: " - ";
+    }
+}
+ ::-webkit-scrollbar {
+     width: 10px;
+}
+ ::-webkit-scrollbar-track {
+     background: rgb(255, 255, 255);
+}
+ ::-webkit-scrollbar-thumb {
+     background: #555;
+}
+ ::-webkit-scrollbar-thumb:hover {
+     background: #ff0000;
+}
+ .contactus{
+     display: flex;
+     padding: 50px;
+     font-size: 50%;
+     gap: 30px;
+     align-items: center;
+}
+ .cinde {
+     align-items: center;
+     background-color: #fff;
+     border: 2px solid #000;
+     box-sizing: border-box;
+     color: #000;
+     cursor: pointer;
+     display: inline-flex;
+     fill: #000;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+     height: 48px;
+     justify-content: center;
+     letter-spacing: -.8px;
+     line-height: 24px;
+     min-width: 140px;
+     outline: 0;
+     padding: 0 17px;
+     text-align: center;
+     text-decoration: none;
+     transition: all .3s;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+}
+ .cinde:focus {
+     color: #171e29;
+}
+ .cinde:hover {
+     border-color: rgb(255, 0, 0);
+     color: rgb(255, 0, 0);
+     fill: rgb(255, 0, 0);
+}
+ .cinde:active {
+     border-color: rgb(255, 0, 0);
+     color: rgb(255, 0, 0);
+     fill: rgb(255, 0, 0);
+}
+ @media (min-width: 768px) {
+     .cinde {
+         min-width: 170px;
+    }
+}
+ .footercopy{
+     font-size:100%;
+     padding-top: 200px;
+     padding-bottom: 20px;
 }
  
-.altepagini:hover{
-    color: rgb(202, 2, 2)(204, 5, 5);
-    
-  }
-
-  p {
-    font-size: 300%; 
- }
-
-  .firstsection{
-display: flex;
-justify-content: space-evenly;
-padding-top: 50px;
-align-items:center;
-gap: 169px;
-padding-bottom: 100px;
-  }
-
-  .textapare{
-    border-right: 3px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: 
-         typing 2s steps(18),
-         cursor .4s step-end infinite alternate;
-  }
-
-  @keyframes cursor{
-    50% { border-color: transparent }
-  }
-
-  @keyframes typing{
-    from { width: 0 }
-  }
-
-  .aboutus{
-background-color: rgb(255, 255, 255);
-display: flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-width: 90%;
-padding: 50px;
-  }
-
-  .team{
-    color: rgb(255, 0, 0);
-    font-size: x-large;
-  }
-
-  .imagien{
-    clip-path: circle();
-  
-  }
-
-  .textbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .fondatori{
-padding: 50px;
-    display: flex;
-    gap: 100px
-  }
-
-  .quote{
-background: grey;
-width: auto;
-padding: 30px;
-padding-right: 200px;
-margin-top: 50px;
-  }
-
-
-  .wisewords{
-    font-size: 200%;
-    text-align: center;
-  }
-
-  .autor
-    {
- 
-      font: normal 100 20px/20px 'Montserrat', sans-serif;
-      letter-spacing: 0.07em;
-      text-align: right;
-      &:before {
-        content: " - ";
-      }
-  }
-
- 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255);
-}
-
-
-::-webkit-scrollbar-thumb {
-  background: #555;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
-}
-
-.contactus{
-  display: flex;
-  padding: 50px;
-  font-size: 50%;
-  gap: 30px;
- 
-  align-items: center;
-}
-
-
-.cinde {
-  align-items: center;
-  background-color: #fff;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  display: inline-flex;
-  fill: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 48px;
-  justify-content: center;
-  letter-spacing: -.8px;
-  line-height: 24px;
-  min-width: 140px;
-  outline: 0;
-  padding: 0 17px;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.cinde:focus {
-  color: #171e29;
-}
-
-.cinde:hover {
-  border-color: rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
-  fill: rgb(255, 0, 0);
-}
-
-.cinde:active {
-  border-color: rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
-  fill: rgb(255, 0, 0);
-}
-
-@media (min-width: 768px) {
-  .cinde {
-    min-width: 170px;
-  }
-}
-
-.footercopy{
-  font-size:100%;
-  padding-top: 200px;
-  padding-bottom: 20px;
-}
-
-
-
